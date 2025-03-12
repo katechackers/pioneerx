@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://pioneerx.ca">
-    <img src="\frontend\build\static\images\demo.png"/>
+    <img src="\frontend\build\static\images\demo.png" alt="Click Here"/>
   </a>
 </p>
 
