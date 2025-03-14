@@ -11,5 +11,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "resolveJsonModule": true
-  }
+  },
+  "include": ["app/src/**/*"]
 }

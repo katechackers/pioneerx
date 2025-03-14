@@ -1,8 +1,11 @@
 {
   "name": "pioneerx",
-  "workspaces": ["app"],
+  "workspaces": [
+    "app"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@types/node": "22",
     "typescript": "^5.8.2"
   },
   "packageManager": "yarn@1.22.22"
