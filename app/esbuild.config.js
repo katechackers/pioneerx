@@ -7,7 +7,7 @@ const entryPoints = await glob([path.resolve("./src/**/*.ts")]);
 build({
   entryPoints,
   outdir: "dist",
-  target: "node22.12",
+  target: "node22.12.0",
   platform: "node",
   bundle: false,
   minify: false,
