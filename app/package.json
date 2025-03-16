@@ -16,7 +16,8 @@
     "exec": "rm -rf ./dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js"
   },
   "dependencies": {
-    "extensionless": "^1.9.9"
+    "extensionless": "^1.9.9",
+    "fastify": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
