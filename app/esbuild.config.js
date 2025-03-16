@@ -1,17 +1,10 @@
-import path from "node:path";
 import { build } from "esbuild";
-import { glob } from "glob";
 
 async function runBuild() {
-
-  /* glob: it's a function from the glob package 
-  that finds files matching a pattern, similar to how shell pattern matching works. */
-  // **: any directory depth
-  // *: any characters
-  const entryPoints = await glob("./src/**/*.ts");
-
   await build({
-    entryPoints,
+    // **: any directory depth
+    // *: any characters
+    entryPoints: ["./src/**/*.ts"],
     outdir: "dist",
     target: "node22",
     platform: "node",
