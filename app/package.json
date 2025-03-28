@@ -2,22 +2,27 @@
   "name": "@pionnerx/app",
   "type": "module",
   "scripts": {
-    "dev": "nodemon",
     "build": "node ./esbuild.config.js",
+    "dev": "nodemon",
     "start": "node --loader=extensionless ./dist/index.js"
   },
   "nodemonConfig": {
-    "watch": "src",
+    "exec": "rm -rf ./dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js",
+    "ext": "ts",
     "ignore": [
       "dist/**",
       "node_modules/**"
     ],
-    "ext": "ts",
-    "exec": "rm -rf ./dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js"
+    "watch": "src"
   },
   "dependencies": {
+    "@fastify/autoload": "^6.2.0",
+    "@fastify/cors": "^11.0.1",
+    "dotenv": "^16.4.7",
+    "dotenv-safe": "^9.1.0",
     "extensionless": "^1.9.9",
-    "fastify": "^5.2.1"
+    "fastify": "^5.2.2",
+    "fastify-plugin": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
