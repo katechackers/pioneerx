@@ -7,5 +7,5 @@ export default fp(
       preflightContinue: true,
     });
   },
-  { name: "cors" },
+  { name: "app.cors" },
 );
